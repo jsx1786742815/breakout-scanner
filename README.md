@@ -7,6 +7,8 @@ A 股「多战法扫描」工具：用户说「根据战法扫描」时，先拉
 |---|---|---|
 | 突破战法（量价确认） | 突破战法 / 放量突破 / 扫突破的票 | `scripts/breakout_scanner.py` |
 | 低吸战法（缩量回踩） | 低吸战法 / 缩量回踩 / 回踩低吸 / 强势股回调 | `scripts/pullback_scanner.py` |
+| 打板/接力（情绪最强） | 打板 / 接力 / 空间板 / 龙头首板 | `scripts/emotion_scanner.py` |
+| 题材/情绪周期（龙头战法） | 情绪周期 / 市场情绪 / 冰点修复发酵高潮退潮 | `scripts/emotion_scanner.py` |
 
 **新增战法**：`references/` 加规则 + `scripts/` 加脚本 + `SKILL.md` 加触发词，跑 `sync-skills.sh`。
 

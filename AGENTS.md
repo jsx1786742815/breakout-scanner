@@ -8,6 +8,8 @@
 |---|---|---|
 | 突破战法（量价确认） | 突破战法/放量突破/扫突破的票 | scripts/breakout_scanner.py |
 | 低吸战法（缩量回踩） | 低吸战法/缩量回踩/回踩低吸/强势股回调 | scripts/pullback_scanner.py |
+| 打板/接力（情绪最强） | 打板/接力/空间板/龙头首板 | scripts/emotion_scanner.py |
+| 题材/情绪周期（龙头战法） | 情绪周期/市场情绪/冰点修复发酵高潮退潮 | scripts/emotion_scanner.py |
 
 **新增战法**：references/ 加规则 + scripts/ 加脚本 + SKILL.md 描述加触发词 + 跑 sync。
 
@@ -18,10 +20,13 @@ AGENTS.md / CLAUDE.md / GEMINI.md # 各 agent 入口
 README.md                         # 兼容矩阵 + 安装
 references/
   ├── breakout-rules.md           # 突破战法规则
-  └── pullback-rules.md           # 低吸战法规则
+  ├── pullback-rules.md           # 低吸战法规则
+  └── emotion-rules.md            # 打板/接力 + 情绪周期规则
 scripts/
   ├── breakout_scanner.py         # 突破扫描（取数+筛选）
   ├── pullback_scanner.py         # 低吸扫描（取数+筛选）
+  ├── emotion_scanner.py          # 情绪周期诊断 + 打板候选
+  ├── datasource.py               # 5数据源容灾模块
   ├── install.sh / install.ps1    # 安装到各 agent
   └── sync-skills.sh              # 同步 .agents 副本
 ```
